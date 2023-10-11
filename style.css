@@ -1,0 +1,98 @@
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #26335d;
+}
+nav {
+  background: #26335d;
+  padding: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  margin-left: 10%;
+}
+.item {
+  padding: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+
+/* Tablet menu */
+
+.item.button {
+  width: auto;
+  order: 1;
+  display: block;
+}
+.toggle {
+  flex: 1;
+  text-align: right;
+  order: 2;
+}
+/* Button */
+.menu li.button a {
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+.button a {
+  background: #fc724d;
+  border-bottom: 5px #fc724d;
+  border-radius: 5px;
+}
+.button.secondary {
+  border: 0;
+}
+.button.secondary a {
+  background: transparent;
+  border-radius: 5px #fc724d solid;
+}
+.button a:hover {
+  text-decoration: none;
+}
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+}
