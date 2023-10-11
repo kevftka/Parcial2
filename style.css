@@ -96,3 +96,19 @@ a {
     width: auto;
   }
 }
+
+/* Info */
+.contenido {
+  width: 100%;
+  color: #fff;
+}
+
+.contenedor-max {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.section {
+  align-items: center;
+  display: flex;
+}
